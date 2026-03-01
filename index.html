@@ -651,19 +651,92 @@
       <h2 class="fade-in">Pedí tu clase.<br>Es gratuita.</h2>
       <p class="sub fade-in">Dejá tu nombre y email y te la enviamos al instante.</p>
 
-      <div id="form-wrapper">
-        <form class="form fade-in" id="registro-form">
-          <input type="text" name="nombre" placeholder="Tu nombre" required autocomplete="given-name" />
-          <input type="email" name="email" placeholder="Tu email" required autocomplete="email" />
-          <button type="submit" class="btn">Quiero mi clase gratis</button>
-          <p class="form-note">Clase grabada · Online · Gratuita<br>No compartimos tu información con nadie.</p>
-        </form>
+      <!-- MailerLite styles override -->
+      <style>
+        #mlb2-37838315.ml-form-embedContainer { background: transparent !important; }
+        #mlb2-37838315.ml-form-embedContainer .ml-form-embedWrapper {
+          background-color: transparent !important; border: none !important;
+          width: 100% !important; max-width: 400px !important; margin: 0 auto !important;
+        }
+        #mlb2-37838315.ml-form-embedContainer .ml-form-embedWrapper.embedForm { max-width: 400px; width: 100%; }
+        #mlb2-37838315.ml-form-embedContainer .ml-form-embedContent { display: none !important; }
+        #mlb2-37838315.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
+          background-color: rgba(250,246,238,0.06) !important;
+          border: 1px solid rgba(250,246,238,0.15) !important;
+          border-radius: 0 !important; color: #FAF6EE !important;
+          font-family: 'Jost', sans-serif !important; font-size: 15px !important;
+          font-weight: 300 !important; padding: 16px 20px !important;
+          height: auto !important; line-height: 1.5 !important;
+        }
+        #mlb2-37838315.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::placeholder { color: rgba(250,246,238,0.3) !important; }
+        #mlb2-37838315.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:focus { border-color: rgba(250,246,238,0.4) !important; outline: none !important; }
+        #mlb2-37838315.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.primary {
+          background-color: #A84F2A !important; border: none !important; border-radius: 0 !important;
+          font-family: 'Jost', sans-serif !important; font-size: 13px !important;
+          font-weight: 500 !important; letter-spacing: 0.16em !important;
+          text-transform: uppercase !important; padding: 18px !important;
+        }
+        #mlb2-37838315.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.primary:hover { background-color: #8B3D1E !important; }
+        #mlb2-37838315.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody { padding: 32px 0 !important; text-align: center !important; }
+        #mlb2-37838315.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4 {
+          color: #FAF6EE !important; font-family: 'Cormorant Garamond', serif !important;
+          font-size: 32px !important; font-weight: 300 !important; text-align: center !important;
+        }
+        #mlb2-37838315.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p {
+          color: rgba(250,246,238,0.55) !important; font-family: 'Jost', sans-serif !important;
+          font-size: 15px !important; text-align: center !important;
+        }
+        #mlb2-37838315.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-field-group label { display: none !important; }
+        #mlb2-37838315.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody { padding: 0 !important; }
+        #mlb2-37838315.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent { margin-bottom: 14px !important; }
+        #mlb2-37838315.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow { margin-bottom: 14px !important; }
+        #mlb2-37838315.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit { margin: 0 !important; }
+      </style>
+
+      <div class="fade-in" style="max-width:400px; margin: 0 auto;">
+        <div id="mlb2-37838315" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-37838315">
+          <div class="ml-form-align-center">
+            <div class="ml-form-embedWrapper embedForm">
+              <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                <div class="ml-form-embedContent"><h4>.</h4></div>
+                <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2152713/forms/180769710511490180/subscribe" data-code="" method="post" target="_blank">
+                  <div class="ml-form-formContent">
+                    <div class="ml-form-fieldRow">
+                      <div class="ml-field-group ml-field-name">
+                        <input aria-label="name" type="text" class="form-control" name="fields[name]" placeholder="Tu nombre" autocomplete="given-name">
+                      </div>
+                    </div>
+                    <div class="ml-form-fieldRow ml-last-item">
+                      <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                        <input aria-label="email" aria-required="true" type="email" class="form-control" name="fields[email]" placeholder="Tu email" autocomplete="email">
+                      </div>
+                    </div>
+                  </div>
+                  <input type="hidden" name="ml-submit" value="1">
+                  <div class="ml-form-embedSubmit">
+                    <button type="submit" class="primary">Quiero mi clase gratis</button>
+                    <button disabled="disabled" style="display:none;" type="button" class="loading">
+                      <div class="ml-form-embedSubmitLoad"></div>
+                      <span class="sr-only">Loading...</span>
+                    </button>
+                  </div>
+                  <input type="hidden" name="anticsrf" value="true">
+                </form>
+              </div>
+              <div class="ml-form-successBody row-success" style="display:none">
+                <div class="ml-form-successContent">
+                  <h4>¡Listo!</h4>
+                  <p>Revisá tu email — ahí te enviamos el acceso a la clase.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="form-note" style="margin-top:16px; color:rgba(250,246,238,0.28); font-size:11px; text-align:center; letter-spacing:0.08em;">
+          Clase grabada · Online · Gratuita<br>No compartimos tu información con nadie.
+        </p>
       </div>
 
-      <div id="success-msg">
-        <h3>¡Listo, te esperamos!</h3>
-        <p>Revisá tu email — ahí te enviamos el acceso a la clase.</p>
-      </div>
     </div>
   </section>
 
@@ -680,11 +753,6 @@
   </section>
 
   <script>
-    // ─── WEBHOOK URL ──────────────────────────────────────────
-    // Reemplazá esta URL con tu webhook de GoHighLevel
-    const GHL_WEBHOOK_URL = "TU_WEBHOOK_URL_DE_GHL_AQUI";
-    // ─────────────────────────────────────────────────────────
-
     // Scroll animations
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -693,47 +761,18 @@
         }
       });
     }, { threshold: 0.12 });
-
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-    // Form submission
-    const form = document.getElementById('registro-form');
-    const successMsg = document.getElementById('success-msg');
-    const formWrapper = document.getElementById('form-wrapper');
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-
-      const btn = form.querySelector('button');
-      btn.textContent = 'Enviando...';
-      btn.disabled = true;
-
-      const nombre = form.nombre.value.trim();
-      const email  = form.email.value.trim();
-
-      const payload = {
-        firstName: nombre,
-        email:     email,
-        tags:      ["raiz-lunar-clase-gratuita"],
-        source:    "landing-clase-gratuita"
-      };
-
-      try {
-        if (GHL_WEBHOOK_URL !== "TU_WEBHOOK_URL_DE_GHL_AQUI") {
-          await fetch(GHL_WEBHOOK_URL, {
-            method:  "POST",
-            headers: { "Content-Type": "application/json" },
-            body:    JSON.stringify(payload)
-          });
-        }
-      } catch (err) {
-        console.error("Webhook error:", err);
-      }
-
-      // Show success regardless (don't block UX on webhook errors)
-      formWrapper.style.display = 'none';
-      successMsg.style.display  = 'block';
-    });
   </script>
+
+  <!-- MailerLite webforms script -->
+  <script>
+    function ml_webform_success_37838315() {
+      var $ = ml_jQuery || jQuery;
+      $('.ml-subscribe-form-37838315 .row-success').show();
+      $('.ml-subscribe-form-37838315 .row-form').hide();
+    }
+  </script>
+  <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v95037e5bac78f29ed026832ca21a7c7b" type="text/javascript"></script>
+  <script>fetch("https://assets.mailerlite.com/jsonp/2152713/forms/180769710511490180/takel")</script>
 </body>
 </html>
